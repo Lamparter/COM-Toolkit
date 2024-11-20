@@ -5,10 +5,17 @@ using System.Runtime.InteropServices.ComTypes;
 
 namespace Riverside.ComponentModel
 {
+    /// <summary>
+    /// Provides utility methods for COM interop.
+    /// </summary>
     public static class InteropUtilities
     {
         private static readonly Dictionary<Delegate, int> EventHandlerCookies = new Dictionary<Delegate, int>();
 
+        /// <summary>
+        /// Releases a COM object.
+        /// </summary>
+        /// <param name="comObject">The COM object to release.</param>
         public static void ReleaseCOMObject(object comObject)
         {
             if (comObject != null && Marshal.IsComObject(comObject))
@@ -17,12 +24,28 @@ namespace Riverside.ComponentModel
             }
         }
 
+        /// <summary>
+        /// Creates a COM object from a ProgID.
+        /// </summary>
+        /// <typeparam name="T">The type of the COM object.</typeparam>
+        /// <param name="progId">The ProgID of the COM object.</param>
+        /// <returns>The created COM object.</returns>
+        /// <exception cref="ArgumentException">Thrown when the ProgID is not found.</exception>
         public static T CreateCOMObject<T>(string progId) where T : class
         {
             Type comType = Type.GetTypeFromProgID(progId);
             return comType == null ? throw new ArgumentException($"ProgID {progId} not found.") : Activator.CreateInstance(comType) as T;
         }
 
+        /// <summary>
+        /// Attaches an event handler to a COM object.
+        /// </summary>
+        /// <typeparam name="T">The type of the COM event interface.</typeparam>
+        /// <param name="comObject">The COM object.</param>
+        /// <param name="eventName">The name of the event.</param>
+        /// <param name="handler">The event handler delegate.</param>
+        /// <exception cref="ArgumentNullException">Thrown when any argument is null.</exception>
+        /// <exception cref="ArgumentException">Thrown when the COM object does not support event handling.</exception>
         public static void AttachEventHandler<T>(object comObject, string eventName, Delegate handler)
         {
             if (comObject == null)
@@ -51,6 +74,15 @@ namespace Riverside.ComponentModel
             EventHandlerCookies[handler] = cookie;
         }
 
+        /// <summary>
+        /// Detaches an event handler from a COM object.
+        /// </summary>
+        /// <typeparam name="T">The type of the COM event interface.</typeparam>
+        /// <param name="comObject">The COM object.</param>
+        /// <param name="eventName">The name of the event.</param>
+        /// <param name="handler">The event handler delegate.</param>
+        /// <exception cref="ArgumentNullException">Thrown when any argument is null.</exception>
+        /// <exception cref="ArgumentException">Thrown when the COM object does not support event handling or the event handler is not found.</exception>
         public static void DetachEventHandler<T>(object comObject, string eventName, Delegate handler)
         {
             if (comObject == null)
