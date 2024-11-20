@@ -1,4 +1,4 @@
-﻿namespace Riverside.ComponentModel
+namespace Riverside.ComponentModel
 {
     public static class Libraries
     {
@@ -53,5 +53,58 @@
         public const string MediaFoundationUUID = "mfuuid.dll"; // Media Foundation UUID
         public const string AudioSession = "AudioSes.dll"; // Audio Session
         public const string AVRT = "avrt.dll"; // AVRT
+        public const string WindowsImageAcquisition = "wiaut.dll"; // Windows Image Acquisition
+        public const string WindowsMediaFormat = "wmvcore.dll"; // Windows Media Format
+        public const string WindowsMediaPlayer = "wmp.dll"; // Windows Media Player
+        public const string WindowsCodecs = "windowscodecs.dll"; // Windows Codecs
+        public const string DirectShow = "quartz.dll"; // DirectShow
+        public const string DirectMusic = "dmusic.dll"; // DirectMusic
+        public const string DirectPlay = "dpnet.dll"; // DirectPlay
+        public const string DirectDraw = "ddraw.dll"; // DirectDraw
+        public const string DirectAccess = "daccess.dll"; // DirectAccess
+        public const string NetworkDiagnostics = "netdiagfx.dll"; // Network Diagnostics
+        public const string BluetoothAPIs = "bthprops.cpl"; // Bluetooth APIs
+        public const string WindowsPortableDevices = "wpdmtp.dll"; // Windows Portable Devices
+        public const string WindowsPerformanceCounter = "pdh.dll"; // Windows Performance Counter
+        public const string WindowsMessaging = "winmm.dll"; // Windows Messaging
+        public const string WindowsScriptingHost = "wshom.ocx"; // Windows Scripting Host
+        public const string WindowsHelp = "help.dll"; // Windows Help
+        public const string WindowsWebServices = "webservices.dll"; // Windows Web Services
+        public const string WindowsDataAccessComponents = "msado15.dll"; // Windows Data Access Components
+        public const string WindowsManagementInstrumentation = "wmi.dll"; // Windows Management Instrumentation
+        public const string WindowsSecurityManager = "secur32.dll"; // Windows Security Manager
+        public const string WindowsAudioCore = "audioses.dll"; // Windows Audio Core
+        public const string WindowsFirewallAPI = "firewallapi.dll"; // Windows Firewall API
+        public const string WindowsHTTPServices = "winhttp.dll"; // Windows HTTP Services
+        public const string WindowsInstrumentation = "instrumentation.dll"; // Windows Instrumentation
+        public const string WindowsMobileAPI = "wmdmps.dll"; // Windows Mobile API
+        public const string WindowsProtectedStorage = "pstorec.dll"; // Windows Protected Storage
+        public const string WindowsUtilityLibrary = "utility.dll"; // Windows Utility Library
+        public const string WindowsWebBrowserControl = "mshtml.dll"; // Windows Web Browser Control
+        public const string WindowsXMLEditor = "msxml.dll"; // Windows XML Editor
+        public const string WindowsMediaFoundation = "mf.dll"; // Windows Media Foundation
+        public const string WindowsImageProcessing = "wimgapi.dll"; // Windows Image Processing
+        public const string WindowsBioAPI = "winbio.dll"; // Windows Biometric API
+        public const string WindowsAuthentication = "authz.dll"; // Windows Authentication
+        public const string WindowsBackupAPI = "wbengine.dll"; // Windows Backup API
+        public const string WindowsEventLog = "wevtapi.dll"; // Windows Event Log
+        public const string WindowsNetworkList = "nlaapi.dll"; // Windows Network List
+        public const string WindowsPowerShell = "powershell.exe"; // Windows PowerShell
+        public const string WindowsRemoteManagement = "wsman.dll"; // Windows Remote Management
+        public const string WindowsResourceManager = "resutils.dll"; // Windows Resource Manager
+        public const string WindowsSpeechAPI = "sapi.dll"; // Windows Speech API
+        public const string WindowsStorageManagement = "srm.dll"; // Windows Storage Management
+        public const string WindowsSyncCenter = "syncmgr.dll"; // Windows Sync Center
+        public const string WindowsTaskScheduler = "taskschd.dll"; // Windows Task Scheduler
+        public const string WindowsTelemetry = "telemetry.dll"; // Windows Telemetry
+        public const string WindowsUIAutomation = "uiautomationcore.dll"; // Windows UI Automation
+        public const string WindowsVirtualDisk = "virtdisk.dll"; // Windows Virtual Disk
+        public const string WindowsVolumeShadowCopy = "vssapi.dll"; // Windows Volume Shadow Copy
+        public const string WindowsWebDAV = "webdav.dll"; // Windows WebDAV
+        public const string WindowsWinHTTP = "winhttp.dll"; // Windows WinHTTP
+        public const string WindowsWLAN = "wlanapi.dll"; // Windows WLAN
+        public const string WindowsWMI = "wmiutils.dll"; // Windows WMI
+        public const string WindowsWOW64 = "wow64.dll"; // Windows WOW64
+        public const string WindowsXMLLite = "xmllite.dll"; // Windows XML Lite
     }
 }
