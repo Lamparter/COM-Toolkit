@@ -18,7 +18,7 @@
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <Version>0.3.0</Version>
-    <PackageIcon>COM-Toolkit.png</PackageIcon>
+    <PackageIcon>Assets\COM-Toolkit.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
