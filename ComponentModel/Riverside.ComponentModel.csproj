@@ -18,10 +18,24 @@
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <Version>0.3.0</Version>
+    <PackageIcon>COM-Toolkit.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Assets\COM-Toolkit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\COM-Toolkit.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
