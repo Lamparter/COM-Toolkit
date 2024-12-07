@@ -106,5 +106,7 @@ namespace Riverside.ComponentModel
         public const string WindowsWMI = "wmiutils.dll"; // Windows WMI
         public const string WindowsWOW64 = "wow64.dll"; // Windows WOW64
         public const string WindowsXMLLite = "xmllite.dll"; // Windows XML Lite
+
+        public const string ShellCore = "shcore.dll"; // Shell Core
     }
 }
