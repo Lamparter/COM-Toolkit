@@ -108,5 +108,6 @@ namespace Riverside.ComponentModel
         public const string WindowsXMLLite = "xmllite.dll"; // Windows XML Lite
 
         public const string ShellCore = "shcore.dll"; // Shell Core
+        public const string CommonControls = "comctl32.dll"; // Common Controls
     }
 }
