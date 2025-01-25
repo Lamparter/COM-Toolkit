@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> `Riverside.ComponentModel` is now part of [CubeKit](https://github.com/RiversideValley/Toolkit).
+> Please see [the tracking issue](https://github.com/RiversideValley/Toolkit/issues/43) for more information on the change and how to upgrade.
+
 # `Riverside.ComponentModel`
 
 ##### The COM Toolkit.
